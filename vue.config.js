@@ -1,7 +1,17 @@
 // vue.config.js
 const path = require('path')
+function resolve(dir) {
+    return path.join(__dirname, dir)
+}
 
 module.exports = {
+    chainWebpack: (config) => {
+        config.resolve.alias
+            .set('@', resolve('src'))
+            .set('css', resolve('src/modules/css'))
+            .set('js', resolve('src/modules/js'))
+            .set('components', resolve('src/components'))
+    },
     pages: {
         index: {
             // page 的入口
