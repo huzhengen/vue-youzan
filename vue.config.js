@@ -28,6 +28,13 @@ module.exports = {
             // 提取出来的通用 chunk 和 vendor chunk。
             chunks: ['chunk-vendors', 'chunk-common', 'index']
         },
+        category: {
+            entry: 'src/pages/category/category.js',
+            template: 'src/pages/category/category.html',
+            filename: 'category.html',
+            title: 'category Page',
+            chunks: ['chunk-vendors', 'chunk-common', 'category']
+        },
     },
     baseUrl: process.env.NODE_ENV === 'production' ?
         '/vue-youzan/dist/' : '/',
