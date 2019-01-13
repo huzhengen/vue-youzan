@@ -1,9 +1,16 @@
 let url = {
     hotLists: '/index/hotLists',
     banner: '/index/banner',
+    topList: '/category/topList',
+    subList: '/category/subList',
+    rank: '/category/rank',
 }
 
-// 开发环境和真实环境的切换
+
+
+
+
+
 
 let host = 'https://www.easy-mock.com/mock/5b332b95f384324226646940/youzan'
 
