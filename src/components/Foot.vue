@@ -1,7 +1,12 @@
 <template>
   <div class="bottom-nav">
     <ul>
-      <li :class="{active: curIndex === index}" v-for="(list, index) in navConfig" :key="list.id" @click="changeNav(list,index)">
+      <li
+        :class="{active: curIndex === index}"
+        v-for="(list, index) in navConfig"
+        :key="list.id"
+        @click="changeNav(list,index)"
+      >
         <a>
           <i :class="list.icon"></i>
           <div>{{list.name}}</div>
@@ -12,6 +17,10 @@
 </template>
 
 <script>
+import qs from "qs";
+
+let { index } = qs.parse(location.search.substr(1));
+
 let navConfig = [
   {
     name: "有赞",
@@ -38,12 +47,12 @@ export default {
   data() {
     return {
       navConfig,
-      curIndex: 0
+      curIndex: parseInt(index) || 0
     };
   },
-  methods:{
-    changeNav(list, index){
-      location.href = `${list.href}?index=${index}`
+  methods: {
+    changeNav(list, index) {
+      location.href = `${list.href}?index=${index}`;
     }
   }
 };

@@ -49,6 +49,13 @@ module.exports = {
             title: 'member Page',
             chunks: ['chunk-vendors', 'chunk-common', 'member']
         },
+        search: {
+            entry: 'src/pages/search/search.js',
+            template: 'src/pages/search/search.html',
+            filename: 'search.html',
+            title: 'search Page',
+            chunks: ['chunk-vendors', 'chunk-common', 'search']
+        },
     },
     baseUrl: process.env.NODE_ENV === 'production' ?
         '/vue-youzan/dist/' : '/',
