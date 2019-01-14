@@ -56,13 +56,13 @@
             <a :href="list.href">
               <div class="thumb">
                 <img :src="list.img">
-                <i class="sell-out"></i>
+                <i class="sell-out" v-if="list.isOut"></i>
               </div>
               <div class="detail">
                 <div class="title">{{list.name}}</div>
                 <div class="meta relative">
                   <span class="price">￥{{list.price}}</span>
-                  <span class="ship pull-right">{{list.isPostage}}</span>
+                  <span class="ship pull-right" v-if="list.isPostage">包邮</span>
                 </div>
               </div>
             </a>
