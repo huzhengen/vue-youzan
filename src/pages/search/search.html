@@ -23,7 +23,7 @@
 </head>
 
 <body class=" " style="min-height: 667px;">
-  <div class="container with-top-search" style="min-height: 667px;">
+  <div class="container with-top-search" style="min-height: 667px;" @touchmove="move">
     <div class="custom-search js-search-bar">
       <form>
         <input type="search" class="custom-search-input" autocomplete="off" name="keyword" :value="keyword" placeholder="搜索更赞的商品" style="padding-left: 66px;">
@@ -61,7 +61,7 @@
               <div class="detail">
                 <div class="title">{{list.name}}</div>
                 <div class="meta relative">
-                  <span class="price">￥{{list.price}}</span>
+                  <span class="price">￥{{list.price | currency}}</span>
                   <span class="ship pull-right" v-if="list.isPostage">包邮</span>
                 </div>
               </div>
@@ -71,7 +71,7 @@
         <div class="list-finished">已经没有更多了</div>
       </div>
     </div>
-    <div class="go-to-top" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);"></div>
+    <div class="go-to-top" v-show="isShow" @click="toTop" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);"></div>
   </div>
 </body>
 
