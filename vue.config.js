@@ -35,6 +35,20 @@ module.exports = {
             title: 'category Page',
             chunks: ['chunk-vendors', 'chunk-common', 'category']
         },
+        cart: {
+            entry: 'src/pages/cart/cart.js',
+            template: 'src/pages/cart/cart.html',
+            filename: 'cart.html',
+            title: 'cart Page',
+            chunks: ['chunk-vendors', 'chunk-common', 'cart']
+        },
+        member: {
+            entry: 'src/pages/member/member.js',
+            template: 'src/pages/member/member.html',
+            filename: 'member.html',
+            title: 'member Page',
+            chunks: ['chunk-vendors', 'chunk-common', 'member']
+        },
     },
     baseUrl: process.env.NODE_ENV === 'production' ?
         '/vue-youzan/dist/' : '/',
