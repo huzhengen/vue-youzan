@@ -40,9 +40,7 @@ new Vue({
         },
         getDeal() {
             axios.post(url.deal, { id }).then(res => {
-                console.log(res)
                 this.dealLists = res.data.data._req.data.lists
-                console.log(this.dealLists)
             })
         },
     },
