@@ -7,6 +7,7 @@ import axios from 'axios'
 import mixin from 'js/mixin.js'
 import url from 'js/api.js'
 import Volecity from 'velocity-animate'
+import Cart from 'js/cartService.js'
 
 new Vue({
     el: '.container',
@@ -136,19 +137,25 @@ new Vue({
         },
         reduce(good) {
             if (good.number === 1) return
-            axios.post(url.cartReduce, {
-                id: good.id,
-                number: 1
-            }).then(res => {
-                good.number -= 1
+            // axios.post(url.cartReduce, {
+            //     id: good.id,
+            //     number: 1
+            // }).then(res => {
+            //     good.number -= 1
+            // })
+            Cart.reduce(good.id).then(res => {
+                good.number--
             })
         },
         add(good) {
-            axios.post(url.cartUpdate, {
-                id: good.id,
-                number: 1
-            }).then(res => {
-                good.number += 1
+            // axios.post(url.cartUpdate, {
+            //     id: good.id,
+            //     number: 1
+            // }).then(res => {
+            //     good.number += 1
+            // })
+            Cart.add(good.id).then(res => {
+                good.number++
             })
         },
         remove(shop, shopIndex, good, goodIndex) {
@@ -208,16 +215,16 @@ new Vue({
                 shop.edittingMsg = '编辑'
             })
         },
-        start(e, good){
+        start(e, good) {
             good.startX = e.changedTouches[0].clientX
         },
-        end(e, shopIndex, good, goodIndex){
+        end(e, shopIndex, good, goodIndex) {
             let endX = e.changedTouches[0].clientX
             let left = '0'
-            if(good.startX - endX > 100){
+            if (good.startX - endX > 100) {
                 left = '-60px'
             }
-            if(endX - good.startX > 100){
+            if (endX - good.startX > 100) {
                 left = '0px'
             }
             Volecity(this.$refs[`goods-${shopIndex}-${goodIndex}`], {
