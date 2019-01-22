@@ -616,7 +616,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   content: '';
   display: block;
   height: 85px;
-  background: url("/v2/image/wap/ump/package_buy/add@2x.png") no-repeat center;
+  background: url("https://b.yzcdn.cn/v2/image/wap/ump/package_buy/add@2x.png") no-repeat center;
   background-size: 14px 14px
 }
 
@@ -806,7 +806,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   right: 14px;
   width: 5px;
   height: 8px;
-  background: url("/v2/image/wap/cashback/guide@2x.png") 5px 8px no-repeat;
+  background: url("https://b.yzcdn.cn/v2/image/wap/cashback/guide@2x.png") 5px 8px no-repeat;
   background-position: center;
   background-size: contain;
   -webkit-transition: 0.1s linear;
@@ -2586,7 +2586,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   margin-top: 10px;
   width: 16px;
   height: 16px;
-  background: url("/v2/image/loader.gif") no-repeat center center;
+  background: url("https://b.yzcdn.cn/v2/image/loader.gif") no-repeat center center;
   background-size: 16px 16px
 }
 
@@ -2595,7 +2595,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
   .list-finished span,
   .loading-more span {
-    background-image: url("/v2/image/loader@2x.gif")
+    background-image: url("https://b.yzcdn.cn/v2/image/loader@2x.gif")
   }
 }
 
