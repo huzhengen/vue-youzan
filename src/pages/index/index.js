@@ -33,7 +33,6 @@ new Vue({
                 pageNum: this.pageNum,
                 pageSize: this.pageSize,
             }).then(res => {
-                console.log(res)
                 let curLists = res.data.data._req
                 // 判断所有数据是否加载完毕
                 if (curLists.length < this.pageSize) {
