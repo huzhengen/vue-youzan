@@ -579,9 +579,11 @@
     color: #999
   }
   
-  .fullscreen-guide.hide,
+  .fullscreen-guide.hide {
+    display:none;
+  }
   .motify {
-    display: none
+    /* display: none */
   }
   
   .btn-disabled,
