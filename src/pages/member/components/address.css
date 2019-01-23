@@ -596,9 +596,22 @@ only screen and (min-device-pixel-ratio: 1.5) {
   background-image: url("https://b.yzcdn.cn/v2/image/pf/icon/uncheck.png")
 }
 
-.address-list .address-item::after {
+/* .address-list .address-item::after {
   position: absolute;
   content: '修改';
+  font-size: 12px;
+  padding-left: 25px;
+  color: #999;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 20px;
+  background: url("https://b.yzcdn.cn/v2/image/pf/icon/m.png") no-repeat 5px 4px;
+  background-size: 14px
+} */
+
+.address-list .address-item .address-edit {
+  position: absolute;
   font-size: 12px;
   padding-left: 25px;
   color: #999;
