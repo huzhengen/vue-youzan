@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="format-detection" content="telephone=no">
-  <meta http-equiv="cleartype" content="on">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="服装批发,河南批发,郑州批发,进货,服装进货,网上批发,网上进货,郑州服装批发,河南服装批发,郑州服装进货,有赞批发">
-  <meta name="description" content="有赞批发—传统批发+互联网解决方案,提供服装批发、服装货源、进货服务、线下整合等一整套互联网解决方案">
-  <link rel="shortcut icon" href="https://static.youzan.com/v2/image/yz_fc.ico">
-  <title>添加收货地址</title>
-  <link rel="stylesheet" href="./css/address_base.css">
-  <link rel="stylesheet" href="./css/address.css">
-</head>
-
-<body class="" style="cursor:pointer;">
-  <div class="container " style="min-height: 597px;">
+<template>
+  <div class="container" style="min-height: 597px;">
     <div class="section section-first">
       <div class="block form js-form">
-        <input class="js-id" name="id" type="hidden" value="">
+        <input class="js-id" name="id" type="hidden" value>
         <div class="block-item" style="border-top:0;">
           <label>收货人</label>
-          <input type="text" placeholder="请输入姓名" name="user_name" value="" maxlength="20">
+          <input type="text" placeholder="请输入姓名" name="user_name" value maxlength="20">
         </div>
         <div class="block-item">
           <label>联系电话</label>
-          <input type="tel" placeholder="联系电话" name="tel" value="" maxlength="11">
+          <input type="tel" placeholder="联系电话" name="tel" value maxlength="11">
         </div>
         <div class="block-item">
           <label>选择地区</label>
@@ -72,14 +54,14 @@
             <select class="js-city-selector">
               <option value="-1">选择城市</option>
             </select>
-            <select class="js-county-selector" name="area_code" data-code="">
+            <select class="js-county-selector" name="area_code" data-code>
               <option value="-1">选择地区</option>
             </select>
           </div>
         </div>
         <div class="block-item">
           <label>详细地址</label>
-          <input type="text" placeholder="街道门牌信息" name="address_detail" value="" maxlength="100">
+          <input type="text" placeholder="街道门牌信息" name="address_detail" value maxlength="100">
         </div>
       </div>
     </div>
@@ -93,7 +75,4 @@
       <button class="btn btn-standard js-save-default-btn">设为默认收货地址</button>
     </div>
   </div>
-  <a style="display: block;" href="https://pfmarket.youzan.com/market/home?m_alias=3nu78u467kddj" class="ft-copyright"></a>
-</body>
-
-</html>
+</template>
