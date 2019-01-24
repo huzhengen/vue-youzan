@@ -3,6 +3,7 @@ import './index.css'
 import Vue from 'vue'
 import axios from 'axios'
 import url from 'js/api.js'
+import mixin from 'js/mixin'
 
 import { InfiniteScroll } from 'mint-ui';
 Vue.use(InfiniteScroll);
@@ -57,5 +58,6 @@ new Vue({
     components: {
         Foot,
         Swipe,
-    }
+    },
+    mixins: [mixin],
 })

@@ -24,10 +24,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- <link rel="stylesheet" href="./css/common.css"> -->
   <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
 </head>
 
 <body class=" " style="min-height: 860px;">
-  <div id="app">
+  <div id="app" v-cloak>
     <div class="container with-bottom-nav" style="min-height: 667px;">
       <div class="content">
         <div class="js-image-swiper custom-image-swiper  custom-image-swiper-single" data-images="1">
@@ -38,17 +43,17 @@
         <div class="section-content shops">
           <div class="shop-wrap">
             <div class="shop-item">
-              <a href="https://h5.koudaitong.com/v2/showcase/feature?alias=zjtozpgn">
+              <a href="javascript:;">
                 <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/09/23/FgQUVNXnvpFKFl1DIN2LXhPA1cxy.png?imageView2/2/w/300/h/0/q/75/format/png">
               </a>
             </div>
             <div class="shop-item">
-              <a href="https://h5.koudaitong.com/v2/feature/1e22e3vtu">
+              <a href="javascript:;">
                 <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/08/03/FqNGnCQS1eq9nIhRg48E_UfFf9K2.png?imageView2/2/w/300/h/0/q/75/format/png">
               </a>
             </div>
             <div class="shop-item">
-              <a href="https://h5.koudaitong.com/v2/feature/8oups7zk">
+              <a href="javascript:;">
                 <img class="fadeIn" src="https://img.yzcdn.cn/upload_files/2016/08/05/Fv5hhMZrtPZQWE7fape0ddEYtSuy.png?imageView2/2/w/300/h/0/q/75/format/png">
               </a>
             </div>
@@ -74,7 +79,7 @@
                   </div>
                   <div class="detail">
                     <div class="title">{{list.name}}</div>
-                    <div class="price">￥{{list.price}}</div>
+                    <div class="price">￥{{list.price | currency}}</div>
                   </div>
                 </a>
               </div>
