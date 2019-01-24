@@ -1,4 +1,5 @@
 import Address from 'js/addressService.js'
+import { mapState } from 'vuex'
 
 export default {
     data() {
@@ -62,10 +63,16 @@ export default {
             deep: true
         },
     },
-    computed: {
-        lists() {
-            return this.$store.state.lists
-        }
+    // computed: { // 第一种方法
+    //     lists() {
+    //         return this.$store.state.lists
+    //     }
+    // },
+    // computed: mapState['lists'], // 第二种方法
+    computed: { // 第三种方法
+        ...mapState({
+            lists: state => state.lists
+        })
     },
     methods: {
         add() {
