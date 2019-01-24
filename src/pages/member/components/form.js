@@ -54,6 +54,17 @@ export default {
             if (this.type === 'edit') {
                 this.districtValue = parseInt(this.instance.districtValue)
             }
+        },
+        lists: {
+            handler() {
+                this.$router.go(-1)
+            },
+            deep: true
+        },
+    },
+    computed: {
+        lists() {
+            return this.$store.state.lists
         }
     },
     methods: {
@@ -61,28 +72,32 @@ export default {
             let { name, tel, provinceValue, cityValue, districtValue, address } = this
             let data = { name, tel, provinceValue, cityValue, districtValue, address }
             if (this.type === 'add') {
-                Address.add(data).then(res => {
-                    this.$router.go(-1)
-                })
+                // Address.add(data).then(res => {
+                //     this.$router.go(-1)
+                // })
+                this.$store.dispatch('addAction', data)
             }
             if (this.type === 'edit') {
                 data.id = this.id
-                Address.update(data).then(res => {
-                    this.$router.go(-1)
-                })
+                // Address.update(data).then(res => {
+                //     this.$router.go(-1)
+                // })
+                this.$store.dispatch('updateAction', data)
             }
         },
         remove() {
             if (window.confirm('确认删除')) {
-                Address.remove(this.id).then(res => {
-                    this.$router.go(-1)
-                })
+                // Address.remove(this.id).then(res => {
+                //     this.$router.go(-1)
+                // })
+                this.$store.dispatch('removeAction', this.id)
             }
         },
         setDefault() {
-            Address.setDefault(this.id).then(res => {
-                this.$router.go(-1)
-            })
+            // Address.setDefault(this.id).then(res => {
+            //     this.$router.go(-1)
+            // })
+            this.$store.dispatch('setDefaultAction', this.id)
         },
     },
 }
