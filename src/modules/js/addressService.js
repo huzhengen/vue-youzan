@@ -7,7 +7,7 @@ class Address {
     }
 
     static add(data) {
-        return fetch(url, addressAdd, data)
+        return fetch(url. addressAdd, data)
     }
 
     static remove(id) {
