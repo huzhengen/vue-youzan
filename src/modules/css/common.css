@@ -875,4 +875,6 @@ html {
   font-family: Helvetica, STHeiti STXihei, Microsoft YaHei, Tohoma, Arial
 }
 
- 
+.swiper-pagination-bullet-active{
+  background-color: #f44!important;
+}

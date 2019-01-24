@@ -467,7 +467,8 @@ only screen and (min-device-pixel-ratio:1.5) {
   height: 32px;
   padding-right: 12px;
   padding-left: 12px;
-  background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAAAXNSR0IArs4c6QAAAINJREFUGBljnDlz5gIGBoZ4ICYGLGQCqsoC4mtEqAapyWIEKZw3b57W79+/TwOZXCA+FvCNlZXVNCkp6RrIBgYQg5GRMRuLQrAQSA6kBsQBawAx0tLSFgCphSA2GlgIlQMLwzVAFaH7B+xuZAPAfkAWQPIPA8zdyPJY2bNmzUoAYWySAB1bJ40myOHYAAAAAElFTkSuQmCC") no-repeat 100%;
+  /* background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAAAXNSR0IArs4c6QAAAINJREFUGBljnDlz5gIGBoZ4ICYGLGQCqsoC4mtEqAapyWIEKZw3b57W79+/TwOZXCA+FvCNlZXVNCkp6RrIBgYQg5GRMRuLQrAQSA6kBsQBawAx0tLSFgCphSA2GlgIlQMLwzVAFaH7B+xuZAPAfkAWQPIPA8zdyPJY2bNmzUoAYWySAB1bJ40myOHYAAAAAElFTkSuQmCC") no-repeat 100%; */
+  background: #fff;
   background-size: 6px, 4px;
   display: none
 }
