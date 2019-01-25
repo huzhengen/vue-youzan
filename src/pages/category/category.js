@@ -33,8 +33,20 @@ new Vue({
             this.topIndex = index
             if (index === 0) {
                 this.getRank()
-            } else {
-                axios.get(url.subList, { id }).then(res => {
+            } else if (index === 1) {
+                axios.get(url.subList1, { id }).then(res => {
+                    this.subData = res.data.data
+                }).catch(res => {
+
+                })
+            } else if (index === 2) {
+                axios.get(url.subList2, { id }).then(res => {
+                    this.subData = res.data.data
+                }).catch(res => {
+
+                })
+            } else if (index === 3) {
+                axios.get(url.subList3, { id }).then(res => {
                     this.subData = res.data.data
                 }).catch(res => {
 
