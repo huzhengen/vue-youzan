@@ -56,6 +56,7 @@ new Vue({
         },
         getDeal() {
             axios.post(url.deal, { id }).then(res => {
+                console.log(res)
                 this.dealLists = res.data.data._req.data.lists
             })
         },
@@ -72,8 +73,6 @@ new Vue({
                 id,
                 number: this.skuNum
             }).then(res=>{
-                console.log(res)
-                console.log(res.data.data._req.status)
                 if(res.data.data._req.status === 200){
                     this.showSku = false
                     this.isAddCart = true

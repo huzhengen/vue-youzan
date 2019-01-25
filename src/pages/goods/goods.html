@@ -40,8 +40,7 @@
                   <span>¥</span><i class="js-goods-price price">{{details.price | currency}}</i>
                 </div>
                 <span class="btn btn-blue btn-retail hide js-retail-btn">门店有售</span>
-                <div class="original-price">
-                  {{details.originalPrice | currency}} </div>
+                <!-- <div class="original-price">{{details.originalPrice | currency}} </div> -->
               </div>
               <hr class="with-margin-l">
               <div class="stock-detail">
@@ -63,20 +62,19 @@
             <div class="sku-detail adv-opts">
               <div class="sku-detail-inner adv-opts-inner">
                 <dl class="sku-group select-sku js-select-sku" @click="chooseSku(1)">
-                  <dt><span class="js-sku-label">选择</span>：</dt>
-                  <dd class="js-sku-value">
-                    <span class="sku-item">净含量</span> </dd>
+                  <dt><span class="js-sku-label">选择</span></dt>
+                  <dd class="js-sku-value"><span class="sku-item"><!--净含量--></span> </dd>
                 </dl>
               </div>
             </div>
             <div class="js-store-info">
               <div class="block block-list goods-store">
                 <div class="custom-store block-item ">
-                  <a class="custom-store-link clearfix" href="https://h5.youzan.com/v2/home/cz0mk59k">
+                  <a class="custom-store-link clearfix" href="javascript:;">
                     <div class="custom-store-img"></div>
                     <div class="custom-store-name">
                       {{details.storeName}} </div>
-                    <span class="custom-store-enter">进入店铺</span>
+                    <!-- <span class="custom-store-enter">进入店铺</span> -->
                   </a>
                 </div>
                 <a class="offline-store block-item js-retail-store hide">
@@ -123,7 +121,7 @@
             <div class="js-bottom-opts js-footer-auto-ele stick-bottom">
               <div class="stick-bottom-icons">
                 <a href="javascript:;" class="js-yz-im icons icons-im ">店主</a>
-                <a href="https://h5.youzan.com/v2/showcase/homepage?kdt_id=16546132" class="js-call-im icons icons-home">店铺</a>
+                <a href="javascript:;" class="js-call-im icons icons-home">店铺</a>
                 <a href="javascript:;" class="js-yz-zan icons icons-zan ">收藏</a>
               </div>
               <div class="stick-bottom-btns">
