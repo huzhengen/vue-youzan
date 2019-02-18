@@ -91,6 +91,11 @@ html {
   line-height: 1
 }
 
+body{
+  max-width: 540px;
+  margin: 0 auto;
+}
+
 ol,
 ul {
   list-style: none

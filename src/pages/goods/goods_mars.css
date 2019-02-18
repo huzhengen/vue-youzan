@@ -130,9 +130,11 @@ body {
 
 .stick-bottom {
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
+  width:100%;
+  max-width:540px;
   font-size: 12px;
   line-height: 16px;
   height: 50px;

@@ -62,6 +62,7 @@ export default {
 .bottom-nav {
   position: fixed;
   width: 100%;
+  max-width: 540px;
   height: 50px;
   bottom: 0;
   background-color: #fff;
