@@ -1,3 +1,7 @@
+body{
+  max-width: 540px;
+  margin: 0 auto;
+}
 .modal-login {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #edf0f4;

@@ -3210,11 +3210,11 @@
     }
     .content {
       width: 750px;
-      margin: 30px auto 0
+      /*margin: 30px auto 0*/
     }
     .content-body {
       width: 540px;
-      padding: 10px;
+      /*padding: 10px;*/
       border: 1px solid #ddd
     }
     .content.no-sidebar .content-body {

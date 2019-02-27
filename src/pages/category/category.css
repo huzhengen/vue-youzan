@@ -1,3 +1,7 @@
+body{
+  max-width: 540px;
+  margin: 0 auto;
+}
 .wakeup-app {
   position: fixed;
   top: -60px;
