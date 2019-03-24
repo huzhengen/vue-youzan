@@ -22,12 +22,6 @@ let url = {
     addressSetDefault: '/address/setDefault',
 }
 
-
-
-
-
-
-
 let host = 'https://www.easy-mock.com/mock/5b332b95f384324226646940/youzan'
 
 for (let key in url) {
